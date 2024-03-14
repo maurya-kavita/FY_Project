@@ -9,7 +9,6 @@ bs4==0.0.2
 cachetools==5.3.3
 catboost==1.2.3
 certifi==2023.7.22
-cffi @ file:///private/tmp/cffi-20230928-4569-10mse72/cffi-1.16.0
 charset-normalizer==3.3.2
 click==8.1.7
 comm==0.2.1

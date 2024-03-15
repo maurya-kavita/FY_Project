@@ -177,7 +177,6 @@ def my_logic(url):
 
     except Exception as e:
         st.markdown("<h3 style='color: #922724;'>Oops! Amazon is tired of your demands!!!</h3>", unsafe_allow_html=True)
-        st.error(e)
         st.markdown("<h3 style='color: #922724;'>Try again if you wanna give another shot&#129393;</h3>", unsafe_allow_html=True)
         
     

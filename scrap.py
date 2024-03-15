@@ -4,6 +4,8 @@ import re
 import os
 import pandas as pd
 import urllib.request
+import nltk
+nltk.download('vader_lexicon')
 from bs4 import BeautifulSoup
 from datetime import datetime
 from nltk.sentiment.vader import SentimentIntensityAnalyzer

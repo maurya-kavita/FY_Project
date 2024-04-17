@@ -98,8 +98,9 @@ def my_logic(url):
 
                     # Find the rating
                     overall_rating_element = soup.find("a", class_="a-popover-trigger a-declarative")
-                    overall_rating_point_span = overall_rating_element.find("span", class_="a-size-base a-color-base")
-                    overall_rating_point = overall_rating_point_span.text.strip() if overall_rating_point_span else " "
+                    overall_rating_point_span = overall_rating_element.find("span", class_="a-icon-alt")
+                    overall_rating_point_format = overall_rating_point_span.text.strip() if overall_rating_point_span else " "
+                    overall_rating_point = overall_rating_point_format.split()[0]
                     
                     # Find the review date
                     review_date_span = date
